@@ -20,7 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_marginTop="10dp"
             android:textSize="15sp"
-            android:text="@string/app_name"
+            android:text="Dinesh Reddit"
             android:textColor="#FFF"
             style="@style/boldfontstyle"
             android:layout_height="wrap_content" />
