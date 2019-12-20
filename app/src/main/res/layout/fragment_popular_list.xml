@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/spinner_lay"
+        android:background="@color/white"
+
+
+        android:layout_height="wrap_content">
+        <Spinner
+            android:layout_width="wrap_content"
+            android:id="@+id/spinner"
+            android:layout_margin="15dp"
+
+            android:layout_height="wrap_content">
+
+        </Spinner>
+
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/black"
+        android:id="@+id/line"
+        android:layout_below="@+id/spinner_lay"
+
+        android:layout_height="0.2dp"/>
+
+    <com.dineshredditsample.customrecycle.AAH_CustomRecyclerView
+        android:id="@+id/rv_home"
+        android:layout_below="@+id/line"
+        android:layout_marginTop="@dimen/_5sdp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/nodata"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/no_data_found"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
